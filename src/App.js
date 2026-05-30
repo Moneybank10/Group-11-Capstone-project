@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import logo from './logo.svg';
 import Planet from './planet_section/Planet';
->>>>>>> 8a0a083 (planet section)
 import './App.css';
 
 // Import all components as they are completed by teammates
@@ -18,7 +15,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
+
       {/* NAVBAR SECTION */}
       {/* <Navbar /> */}
 
@@ -59,9 +56,8 @@ function App() {
 
       {/* FOOTER SECTION */}
       {/* <Footer /> */}
-=======
       <Planet />
->>>>>>> 8a0a083 (planet section)
+
     </div>
   );
 }
