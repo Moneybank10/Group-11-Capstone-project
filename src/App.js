@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       {/* Navbar component will go here */}
       {/* Hero component will go here */}
-      {/* Video Section will go here */}
+      {/* videosection component will go here */}
       {/* Planet Cards will go here */}
       {/* Planets Table will go here */}
       {/* Contact Form will go here */}
