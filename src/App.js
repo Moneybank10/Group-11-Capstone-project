@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Planet from './planet_section/Planet';
+
 import './App.css';
 
 // Import all components as they are completed by teammates
@@ -7,10 +7,10 @@ import './App.css';
 // import Navbar from './components/Navbar';
 // import Hero from './components/Hero';
 // import VideoSection from './components/VideoSection';
-// import PlanetCards from './components/PlanetCards';
+import Planet from './planet_section/Planet';
 // import PlanetsTable from './components/PlanetsTable';
 // import ContactForm from './components/ContactForm';
-// import Footer from './components/Footer';
+import Footer from './footer/footer';
 
 function App() {
   return (
@@ -36,10 +36,9 @@ function App() {
       {/* VIDEO SECTION */}
       {/* <VideoSection /> */}
 
-      {/* PLANET CARDS SECTION */}
-      {/* This section displays planet cards fetched from API */}
+      {/* PLANET SECTION */}
       <section id="planets">
-        {/* <PlanetCards /> */}
+        <Planet />
       </section>
 
       {/* PLANETS TABLE SECTION */}
@@ -54,9 +53,8 @@ function App() {
         {/* <ContactForm /> */}
       </section>
 
-      {/* FOOTER SECTION */}
-      {/* <Footer /> */}
-      <Planet />
+  
+      <Footer />
 
     </div>
   );
