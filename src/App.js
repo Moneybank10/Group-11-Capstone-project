@@ -1,4 +1,5 @@
-import './App.css';
+import "./App.css";
+import ContactForm from "./contactform/contactform";
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
       {/* videosection component will go here */}
       {/* Planet Cards will go here */}
       {/* Planets Table will go here */}
-      {/* Contact Form will go here */}
+
+      <ContactForm />
+
       {/* Footer will go here */}
     </div>
   );
