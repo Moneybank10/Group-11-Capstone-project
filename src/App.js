@@ -8,7 +8,7 @@ import './App.css';
 // Uncomment each import as the component is ready
 // import Navbar from './components/Navbar';
 // import Hero from './components/Hero';
-// import VideoSection from './components/VideoSection';
+import VideoSection from './videosection/video-section';
 import Planet from './planet_section/Planet';
 // import PlanetsTable from './components/PlanetsTable';
 import ContactForm from "./contactform/contactform";
@@ -45,7 +45,7 @@ function App() {
       {/* <Hero /> */}
 
       {/* VIDEO SECTION */}
-      {/* <VideoSection /> */}
+      <VideoSection />
 
       {/* PLANET SECTION */}
       <section id="planets">
