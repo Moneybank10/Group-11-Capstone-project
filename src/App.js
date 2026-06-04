@@ -1,5 +1,5 @@
-import "./App.css";
-import ContactForm from "./contactform/contactform";
+
+
 import logo from './logo.svg';
 
 import './App.css';
@@ -11,7 +11,7 @@ import './App.css';
 // import VideoSection from './components/VideoSection';
 import Planet from './planet_section/Planet';
 // import PlanetsTable from './components/PlanetsTable';
-// import ContactForm from './components/ContactForm';
+import ContactForm from "./contactform/contactform";
 import Footer from './footer/footer';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       {/* Planet Cards will go here */}
       {/* Planets Table will go here */}
 
-      <ContactForm />
+      
 
       {/* Footer will go here */}
 
@@ -61,7 +61,7 @@ function App() {
       {/* CONTACT FORM SECTION */}
       {/* This section contains the contact form for user inquiries */}
       <section id="contact">
-        {/* <ContactForm /> */}
+        <ContactForm />
       </section>
 
   
