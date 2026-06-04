@@ -1,23 +1,46 @@
-<div class="planetary-section">
 
-    <div class="video-box">
-        <video autoplay muted loop playsinline>
-            <source src="./assets/Solar System.mp4" type="video/mp4">
+import './VideoSection.css';
+
+export default function VideoSection() {
+  return (
+    <section className="video-section">
+      <div className="video-container">
+        <video autoPlay muted loop>
+          <source src="your-video-url.mp4" type="video/mp4" />
         </video>
-    </div>
+      </div>
+      <h2>How Planetary Data Helps Us Understand Space</h2>
+      <p>Your text here...</p>
+    </section>
+  );
+}
+.video-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 80px;
+  background-color: white;
+}
 
-    <div class="text-box">
-        <h2 class="heading">
-            How Planetary data helps us understand space
-        </h2>
+.video-container video {
+  width: 45%;
+  border-radius: 10px;
+}
 
-        <p>
-            Planetary science goes beyond images. Comparing 
-            <span class="highlight">mass</span>, 
-            <span class="highlight">diameter</span>, 
-            <span class="highlight">gravity</span> and 
-            <span class="highlight">density</span>, we gain insight into how planets form, behave and interact within the solar system.
-        </p>
-    </div>
+.video-text {
+  max-width: 500px;
+}
 
-</div>
+.video-text h2 {
+  font-size: 28px;
+  color: #1a56db;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: #1a56db !important;
+}
+.video-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
