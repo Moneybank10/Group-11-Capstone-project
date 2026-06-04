@@ -1,35 +1,128 @@
 .contact-section {
-  max-width: 700px;
-  margin: 60px auto;
-  padding: 20px;
+  background: #f3f3f3;
+  padding: 60px 50px;
 }
 
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 25px;
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.contact-section form {
+.contact-header h2 {
+  color: #1f4eb6;
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-header p {
+  color: #243b5a;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 45px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 20px;
+}
+
+.form-group {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.contact-section input,
-.contact-section textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
 }
 
-.contact-section button {
-  padding: 12px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+.form-group label span {
+  color: red;
 }
 
-.contact-section p {
-  text-align: center;
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+.form-group input {
+  height: 56px;
+}
+
+.form-group textarea {
+  height: 58px;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1f4eb6;
+}
+
+.form-group small {
   margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.submit-btn {
+  margin-top: 45px;
+  width: 305px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: #1f4eb6;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #173f98;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.status {
+  margin-top: 15px;
+  color: #1f4eb6;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .contact-header h2 {
+    font-size: 32px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
 }
