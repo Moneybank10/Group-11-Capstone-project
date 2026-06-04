@@ -1,3 +1,5 @@
+import "./App.css";
+import ContactForm from "./contactform/contactform";
 import logo from './logo.svg';
 
 import './App.css';
@@ -15,6 +17,15 @@ import Footer from './footer/footer';
 function App() {
   return (
     <div className="App">
+      {/* Navbar component will go here */}
+      {/* Hero component will go here */}
+      {/* videosection component will go here */}
+      {/* Planet Cards will go here */}
+      {/* Planets Table will go here */}
+
+      <ContactForm />
+
+      {/* Footer will go here */}
 
       {/* NAVBAR SECTION */}
       {/* <Navbar /> */}
