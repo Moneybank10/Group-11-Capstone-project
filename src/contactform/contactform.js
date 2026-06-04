@@ -3,6 +3,7 @@ import "./contactform.css";
 
 function ContactForm() {
   const [status, setStatus] = useState("");
+  const [charCount, setCharCount] = useState(100);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,11 +13,6 @@ function ContactForm() {
     const email = e.target.email.value.trim();
     const message = e.target.message.value.trim();
 
-    console.log("Full Name:", fullName);
-    console.log("Phone Number:", phoneNumber);
-    console.log("Email:", email);
-    console.log("Message:", message);
-
     try {
       const formData = new URLSearchParams();
 
@@ -25,7 +21,7 @@ function ContactForm() {
       formData.append("email", email);
       formData.append("message", message);
 
-      const response = await fetch("PASTE_API_ENDPOINT_HERE", {
+      const response = await fetch("https://whitebricks.com/tsacademy.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -33,14 +29,10 @@ function ContactForm() {
         body: formData.toString(),
       });
 
-      const responseText = await response.text();
-
-      console.log("Response Status:", response.status);
-      console.log("Response Text:", responseText);
-
       if (response.status === 200) {
         setStatus("Message sent successfully!");
         e.target.reset();
+        setCharCount(100);
       } else {
         setStatus("Submission failed.");
       }
@@ -52,41 +44,84 @@ function ContactForm() {
 
   return (
     <section id="contact" className="contact-section">
-      <h2>Contact Us</h2>
+      <div className="contact-container">
+        <div className="contact-header">
+          <h2>Have Questions About Planetary Science?</h2>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="fullName"
-          placeholder="Full Name"
-          required
-        />
+          <p>
+            Interested in learning more about space, astronomy, or how
+            planetary data is collected and analyzed?
+            <br />
+            Reach out and we'll get back to you.
+          </p>
+        </div>
 
-        <input
-          type="tel"
-          name="phoneNumber"
-          placeholder="Phone Number"
-          required
-        />
+        <form onSubmit={handleSubmit}>
+          <div className="form-grid">
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          required
-        />
+            <div className="form-group">
+              <label>
+                Full Name<span>*</span>
+              </label>
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Full name"
+                required
+              />
+            </div>
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="5"
-          required
-        ></textarea>
+            <div className="form-group">
+              <label>
+                Email<span>*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
 
-        <button type="submit">Send Message</button>
+            <div className="form-group">
+              <label>
+                Phone Number<span>*</span>
+              </label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                placeholder="Please enter a valid phone number."
+                required
+              />
+            </div>
 
-        <p>{status}</p>
-      </form>
+            <div className="form-group">
+              <label>
+                Message<span>*</span>
+              </label>
+
+              <textarea
+                name="message"
+                maxLength="100"
+                placeholder="Enter your message"
+                onChange={(e) =>
+                  setCharCount(100 - e.target.value.length)
+                }
+                required
+              ></textarea>
+
+              <small>{charCount} characters</small>
+            </div>
+
+          </div>
+
+          <button type="submit" className="submit-btn">
+            Submit <span className="arrow">›</span>
+          </button>
+
+          {status && <p className="status">{status}</p>}
+        </form>
+      </div>
     </section>
   );
 }
