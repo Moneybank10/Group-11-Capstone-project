@@ -6,11 +6,11 @@ import './App.css';
 
 // Import all components as they are completed by teammates
 // Uncomment each import as the component is ready
-// import Navbar from './components/Navbar';
+import Navbar from './Navbar/Navbar';
 // import Hero from './components/Hero';
 import VideoSection from './videosection/video-section';
 import Planet from './planet_section/Planet';
-// import PlanetsTable from './components/PlanetsTable';
+import PlanetsTable from './PlanetsTable/PlanetsTable';
 import ContactForm from "./contactform/contactform";
 import Footer from './footer/footer';
 
@@ -27,8 +27,8 @@ function App() {
 
       {/* Footer will go here */}
 
-      {/* NAVBAR SECTION */}
-      {/* <Navbar /> */}
+     
+      <Navbar />
 
       {/* HERO SECTION */}
       {/* 
@@ -55,7 +55,7 @@ function App() {
       {/* PLANETS TABLE SECTION */}
       {/* This section displays planetary facts in a table format */}
       <section id="planets-table">
-        {/* <PlanetsTable /> */}
+      <PlanetsTable />
       </section>
 
       {/* CONTACT FORM SECTION */}

@@ -1,0 +1,44 @@
+.table-section {
+  padding: 60px 80px;
+  background-color: white;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 0; 
+}
+
+
+.table-section h2 {
+  color: #1a56db;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #1a56db;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #e8f0ff;
+}
+
+td.category-row {
+  background-color: #c5deff !important;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f4ff;
+}

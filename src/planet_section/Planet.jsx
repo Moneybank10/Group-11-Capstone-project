@@ -16,7 +16,7 @@ function Planet() {
   console.log(planetData);
 
   return (
-    <div className='planet'>
+    <div className='planet' id="explore">
       <div className='planet_text'>
         <h2>Visualizing the Differences Between Planets</h2>
 <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly different terrestrial planets are from gas giants and ice giants.</p>
