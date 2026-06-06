@@ -12,26 +12,22 @@
   width: 121px;
 }
 
-.navbar-links {
-  display: flex;
-  gap: 16px;
-}
 
-.btn-primary {
-  background-color: #1a56db;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  border: 1px solid white;
-  font-size: 14px;
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    gap: 15px;
+  }
+  .navbar-logo { width: 80px; }
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .btn-primary, .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -31,3 +31,16 @@
 .highlight {
   color: #1a56db;
 }
+
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .video-container video { width: 100%; }
+  .video-text h2 { font-size: 22px; }
+
+  .video-section {
+    flex-direction: column-reverse;
+  }
+}

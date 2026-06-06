@@ -1,7 +1,6 @@
 .planet{
-    background-color: rgb(238, 235, 235);
+    background-color: #f0f4ff;
     padding: 20px;
-    /* border: black solid 1px; */
     display: flex;
     flex-direction: column ;
 }
@@ -22,7 +21,6 @@
 
 .planet_image_container{
     margin: 10px;
-    /* border: black solid 1px; */
     justify-content: center;
     width: 100%;
     
@@ -31,14 +29,11 @@
     flex-wrap: wrap;
 }
 .planet_card{
-    /* flex: 1; */
     margin: 20px;
     width: 350px;
     height: 320px;
-    /* border: black solid 1px; */
-    
 
-    /* border-top: black solid 1px; */
+    
 } 
 .image_container{
     width: 100%;
@@ -73,4 +68,13 @@
     margin: 10px;
     font-size: large;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .planets-section { padding: 40px 20px; }
+  
+  .planet_image_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
