@@ -11,6 +11,9 @@ The Project explores the solar system through visual representation, images and 
 - Kadiri Michael - https://github.com/Kardsss
 - Favour Nwobodo-Charles - https://github.com/Chyoma123
 - Igwilo Deborah Ebube - https://github.com/Debby-dev
+- Emmanuel Adegbe - https://github.com/Emmy-Dev06
+- Oaikhean Kingsley - https://github.com/jackterry946-sys
+Taofeek Folorunso (Team Lead) - https://github.com/moneybank10
 
 ## Components and Contributors
 - Olusoji Daniel - Planet Cards
@@ -19,3 +22,6 @@ The Project explores the solar system through visual representation, images and 
 - Kadiri Michael - Contact-form section
 - Favour Nwoobodo-Charles - Video section
 - Igwilo Deborah Ebube - Navbar
+- Emmanuel Adegbe - Hero section
+- Oaikhean Kingsley - Responsive Design for footer
+- Taofeek Folorunso (Team Lead) - Table section, App integration and Deployment
