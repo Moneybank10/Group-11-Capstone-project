@@ -36,3 +36,6 @@ npm install
 npm start
 
 4. Open [http://localhost:3000] in your browser.
+
+## Live Deployment link
+https://group-11-capstone.netlify.app
