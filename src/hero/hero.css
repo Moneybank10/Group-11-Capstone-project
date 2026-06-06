@@ -52,7 +52,6 @@
   width: 400px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -70,5 +69,9 @@
 
   .hero-buttons {
     justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
   }
 }

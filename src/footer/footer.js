@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';
+import './footer.css';
 
-function Footer() {
+function footer() {
   return (
     <footer className="footer">
       <div className="footer-about">
         <h3>About</h3>
-        <p>We are Group 11 - Taofeek, Favour, King, Daniel, Michael, Emmy and Precious.</p>
+        <p>We are Group 11 - Taofeek, Favour, King, Daniel, Michael, Emmy, Debby, Amidat and Precious.</p>
       </div>
       <div className="footer-columns">
         <div className="footer-col">
@@ -38,4 +38,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default footer;

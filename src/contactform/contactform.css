@@ -1,5 +1,5 @@
 .contact-section {
-  background: #f3f3f3;
+  background: white;
   padding: 60px 50px;
 }
 
@@ -10,8 +10,7 @@
 
 .contact-header h2 {
   color: #1f4eb6;
-  font-size: 46px;
-  font-weight: 700;
+  
   margin-bottom: 15px;
 }
 
@@ -25,7 +24,7 @@
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px 20px;
+  gap: 24px 50px;
 }
 
 .form-group {

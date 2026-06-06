@@ -1,10 +1,7 @@
-# Group-11-Capstone-project
-A React web application that displays solar system data including planet facts, images and distances from the sun. Built by Group 11
-
 ## Project Summary
 The Project explores the solar system through visual representation, images and interactive planetary data. It provides insight into how planets form, behave, and interact within the solar system.
 
-## Tean Members
+## Team Members
 - Olusoji Daniel - https://github.com/Dpope38
 - Osaigbovo Precious - https://github.com/precious735
 - Mohammed Amidat - https://github.com/Amidat-m
@@ -13,7 +10,7 @@ The Project explores the solar system through visual representation, images and 
 - Igwilo Deborah Ebube - https://github.com/Debby-dev
 - Emmanuel Adegbe - https://github.com/Emmy-Dev06
 - Oaikhean Kingsley - https://github.com/jackterry946-sys
-Taofeek Folorunso (Team Lead) - https://github.com/moneybank10
+- Taofeek Folorunso (Team Lead) - https://github.com/moneybank10
 
 ## Components and Contributors
 - Olusoji Daniel - Planet Cards
@@ -25,3 +22,17 @@ Taofeek Folorunso (Team Lead) - https://github.com/moneybank10
 - Emmanuel Adegbe - Hero section
 - Oaikhean Kingsley - Responsive Design for footer
 - Taofeek Folorunso (Team Lead) - Table section, App integration and Deployment
+
+## How to Run Locally
+
+1. Clone the repository:
+git clone https://github.com/Moneybank10/Group-11-Capstone-project.git
+cd Group-11-Capstone-project
+
+2. Install dependencies:
+npm install
+
+3. Start the development server:
+npm start
+
+4. Open [http://localhost:3000] in your browser.
