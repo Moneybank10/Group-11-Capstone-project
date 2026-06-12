@@ -76,5 +76,23 @@
   .planet_image_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding:5px;
+    gap:12px;
   }
+  .planet_card {
+    width: 100%;
+    height: 250px;
+    margin:5px;
+  }
+  .image_container {
+    height: 45%;
+  }
+    .planet_info {
+        height: 55%;
+    }
+    .planet_info p {
+        font-size: small;
+        margin: 5px;
+    }
 }
