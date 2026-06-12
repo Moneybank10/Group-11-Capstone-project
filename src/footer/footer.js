@@ -6,7 +6,7 @@ function footer() {
     <footer className="footer">
       <div className="footer-about">
         <h3>About</h3>
-        <p>We are Group 11 - Taofeek, Favour, King, Daniel, Michael, Emmy, Debby, Amidat and Precious.</p>
+        <p>We are Group 11 - Taofeek, Favour, King, Daniel, Michael, Emmy, Debby, Nanu, Amidat and Precious.</p>
       </div>
       <div className="footer-columns">
         <div className="footer-col">

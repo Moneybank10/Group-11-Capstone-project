@@ -10,6 +10,7 @@ The Project explores the solar system through visual representation, images and 
 - Igwilo Deborah Ebube - https://github.com/Debby-dev
 - Emmanuel Adegbe - https://github.com/Emmy-Dev06
 - Oaikhean Kingsley - https://github.com/jackterry946-sys
+- Amagba Chinanuekpere S - https://github.com/nanu-bot
 - Taofeek Folorunso (Team Lead) - https://github.com/moneybank10
 
 ## Components and Contributors
@@ -21,6 +22,7 @@ The Project explores the solar system through visual representation, images and 
 - Igwilo Deborah Ebube - Navbar
 - Emmanuel Adegbe - Hero section
 - Oaikhean Kingsley - Responsive Design for footer
+- Amagba Chinanuekpere S - Responsive design for table section
 - Taofeek Folorunso (Team Lead) - Table section, App integration and Deployment
 
 ## How to Run Locally
